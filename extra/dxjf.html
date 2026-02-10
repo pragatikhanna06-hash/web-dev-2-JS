@@ -1,0 +1,341 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(https://img.freepik.com/premium-photo/young-programmer-is-sitting-dark-room-surrounded-by-multiple-computer-monitors-he-is-wearing-headphones-is-focused-his-work_14117-391590.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* background-position: center; */
+        }
+    </style>
+</head>
+<body>
+   <header>
+  <h1>Project Name</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Browse Projects</a>
+    <a href="#">Submit Project</a>
+    <a href="#">Login</a>
+  </nav>
+</header>
+
+ <section class="hero">
+  <div>
+    <h2>Explore Senior Projects</h2>
+    <p>Discover innovative projects created by senior students</p>
+  </div>
+</section>
+
+<section class="filters">
+  <select><option>Category</option></select>
+  <select><option>Year</option></select>
+  <select><option>Technology</option></select>
+  <button>Search</button>
+</section>
+
+<section class="section">
+  <h3>Featured Projects</h3>
+  <div class="grid">
+    <div class="card">
+      <h4>Smart Home Automation</h4>
+      <p>IoT-based smart home system using Arduino.</p>
+      <div class="tags">
+        <span>IoT</span><span>Arduino</span><span>Mobile App</span>
+      </div>
+      <button>View Project</button>
+    </div>
+
+    <div class="card">
+      <h4>Eco-Friendly Vehicle</h4>
+      <p>Solar-powered electric vehicle design.</p>
+      <div class="tags">
+        <span>Solar</span><span>Sustainable</span>
+      </div>
+      <button>View Project</button>
+    </div>
+
+    <div class="card">
+      <h4>AI Health Diagnosis</h4>
+      <p>Machine learning system for medical diagnosis.</p>
+      <div class="tags">
+        <span>AI</span><span>Python</span><span>Healthcare</span>
+      </div>
+      <button>View Project</button>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Share Your Project!</h2>
+  <p>Upload your project and inspire juniors</p>
+  <button>Submit Your Project</button>
+</section>
+
+<footer>
+  © 2026 Project Name
+</footer>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Senior Projects Hub</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0f172a;   /* dark navy */
+      color: #e5e7eb;
+    }
+
+    /* Navbar */
+    header {
+      background: #111827;
+      padding: 16px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #1f2937;
+    }
+
+    header h1 {
+      font-size: 22px;
+      color: #3b82f6;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #cbd5f5;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #3b82f6;
+    }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(
+          rgba(15, 23, 42, 0.85),
+          rgba(15, 23, 42, 0.85)
+        ),
+        url("./background_image.jpeg");
+      background-size: cover;
+      background-position: center;
+      padding: 70px 40px;
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      color: #cbd5f5;
+    }
+
+    /* Filters */
+    .filters {
+      background: #111827;
+      padding: 20px 40px;
+      display: flex;
+      gap: 15px;
+      border-bottom: 1px solid #1f2937;
+    }
+
+    .filters select {
+      background: #0f172a;
+      color: #e5e7eb;
+      border: 1px solid #1f2937;
+      padding: 10px;
+      border-radius: 6px;
+    }
+
+    .filters button {
+      background: #3b82f6;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    /* Section */
+    .section {
+      padding: 40px;
+    }
+
+    .section h3 {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    /* Project Grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #111827;
+      border: 1px solid #1f2937;
+      border-radius: 12px;
+      padding: 20px;
+    }
+
+    .card h4 {
+      margin-bottom: 8px;
+      color: #f9fafb;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #9ca3af;
+      margin-bottom: 12px;
+    }
+
+    .tags span {
+      background: #1f2937;
+      color: #cbd5f5;
+      padding: 4px 8px;
+      border-radius: 6px;
+      font-size: 12px;
+      margin-right: 6px;
+    }
+
+    .card button {
+      margin-top: 15px;
+      padding: 8px 14px;
+      background: #3b82f6;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    /* CTA */
+    .cta {
+      background: #111827;
+      padding: 50px 40px;
+      text-align: center;
+      border-top: 1px solid #1f2937;
+    }
+
+    .cta h2 {
+      margin-bottom: 10px;
+    }
+
+    .cta p {
+      color: #9ca3af;
+    }
+
+    .cta button {
+      margin-top: 20px;
+      padding: 12px 22px;
+      background: #3b82f6;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0f172a;
+      font-size: 14px;
+      color: #9ca3af;
+      border-top: 1px solid #1f2937;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Project Name</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Browse Projects</a>
+    <a href="#">Submit Project</a>
+    <a href="#">Login</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Explore Senior Projects</h2>
+  <p>Discover innovative projects created by senior students</p>
+</section>
+
+<section class="filters">
+  <select><option>Category</option></select>
+  <select><option>Year</option></select>
+  <select><option>Technology</option></select>
+  <button>Search</button>
+</section>
+
+<section class="section">
+  <h3>Featured Projects</h3>
+  <div class="grid">
+    <div class="card">
+      <h4>Smart Home Automation</h4>
+      <p>IoT-based smart home system using Arduino.</p>
+      <div class="tags">
+        <span>IoT</span><span>Arduino</span><span>Mobile App</span>
+      </div>
+      <button>View Project</button>
+    </div>
+
+    <div class="card">
+      <h4>Eco-Friendly Vehicle</h4>
+      <p>Solar-powered electric vehicle design.</p>
+      <div class="tags">
+        <span>Solar</span><span>Sustainable</span>
+      </div>
+      <button>View Project</button>
+    </div>
+
+    <div class="card">
+      <h4>AI Health Diagnosis</h4>
+      <p>Machine learning system for medical diagnosis.</p>
+      <div class="tags">
+        <span>AI</span><span>Python</span><span>Healthcare</span>
+      </div>
+      <button>View Project</button>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Share Your Project</h2>
+  <p>Upload your project and help juniors learn from real implementations</p>
+  <button>Submit Your Project</button>
+</section>
+
+<footer>
+  © 2026 Project Name
+</footer>
+
+</body>
+</html>

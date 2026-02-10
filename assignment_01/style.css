@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(#2f35da,#9145b8);
+}
+.firstBox{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    gap: 20px;
+}
+#head{
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    color: white;
+}
+#newEvent{
+    display: flex;
+    justify-content: center;
+    color: blue;
+}
+#New{
+   color: blue; 
+}
+.btn{
+    background: linear-gradient(#9145b8,#2f35da);
+    transition: ease-in;
+}
+btn hover{
+
+}

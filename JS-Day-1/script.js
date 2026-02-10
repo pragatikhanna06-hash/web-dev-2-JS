@@ -3,6 +3,7 @@
     // 1.Regular function
 
     // function sample(a){
+    
     // console.log(a,"sample");
     // }
     // sample(5)  
